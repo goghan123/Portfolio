@@ -1,0 +1,42 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "main": "index.html",
+  "jest": {
+    "verbose": true,
+    "rootDir": "../pokedex-main",
+    "autorun": true,
+    "modulePathIgnorePatterns": [
+      "./jest-pretest.js"
+    ],
+    "setupFiles": [
+      "./__tests__/jest-pretest.js"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "io",
+  "license": "ISC",
+  "dependencies": {
+    "@jest/globals": "^27.4.6",
+    "bootstrap": "^5.0.2",
+    "eslint-plugin-brackets": "^0.1.3",
+    "jest-fetch-mock": "^3.0.3",
+    "jquery": "^3.6.0",
+    "jsdom": "^16.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.8",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.4.7"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "description": ""
+}
