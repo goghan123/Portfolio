@@ -6,7 +6,6 @@ import { results } from './main.js';
 export const serverMessages = document.querySelector('#server-messages');
 
 export function newValueAssigner() {
-  console.log('New value assigner');
   const randomValue = Math.ceil(Math.random() * 4);
   function orderAssigner(value) {
     if (value === 1) {
@@ -36,10 +35,3 @@ export function ingameServerMessages(turnNumber) {
     serverMessages.innerHTML = 'You trully are king of kings';
   }
 }
-
-// export function previousTurnsShower(turnToReviewPreviousValues, turnNumber) {
-//   brightAssigner(results[turnToReviewPreviousValues]);
-//   if (turnToReviewPreviousValues === results.length && turnNumber !== 1) {
-//     setTimeout(newValueAssigner, 1500);
-//   }
-// }

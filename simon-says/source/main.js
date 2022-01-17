@@ -105,9 +105,7 @@ export function gameInProcess() {
     };
     return false;
   }
-  console.log('Before the timeout');
   setTimeout(computerTurn, 1000);
-  console.log('After the timeout');
 }
 
 export function cancelGame() {

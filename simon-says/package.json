@@ -2,12 +2,24 @@
   "name": "simon-says",
   "version": "1.0.0",
   "main": "index.html",
+  "transform": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "rootDir": "../simon-says",
+    "modulePathIgnorePatterns": [
+      "./jest-pretest.js"
+    ],
+    "setupFiles": [
+      "./__tests__/jest-pretest.js"
+    ]
   },
   "author": "io",
   "license": "ISC",
   "dependencies": {
+    "@jest/globals": "^27.4.6",
     "abab": "^2.0.5",
     "acorn": "^7.4.1",
     "acorn-globals": "^6.0.0",
@@ -25,6 +37,7 @@
     "array.prototype.flat": "^1.2.4",
     "astral-regex": "^2.0.0",
     "asynckit": "^0.4.0",
+    "babel": "^6.23.0",
     "babel-jest": "^27.4.6",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-istanbul": "^6.1.1",
@@ -361,6 +374,7 @@
   },
   "description": "",
   "devDependencies": {
+    "@babel/preset-env": "^7.16.8",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",

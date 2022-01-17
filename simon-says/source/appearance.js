@@ -29,6 +29,5 @@ export function brightAssigner(value) {
     redSquare.style.backgroundColor = '#DE7C7C';
   } else if (value === 4) {
     blueSquare.style.backgroundColor = '#9AADDA';
-  } else {
   }
 }
