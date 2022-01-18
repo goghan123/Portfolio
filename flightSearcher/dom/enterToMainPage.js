@@ -10,7 +10,7 @@ export default async function enterToMainPage(page) {
     page.setDefaultNavigationTimeout(100000);
     await page.goto('https://www.despegar.com.ar/');
 
-    let messageForHumans = 'MARK "SEARCH ONE WAY ONLY" OPTION';
+    let messageForHumans = 'MARKS "SEARCH ONE WAY ONLY" OPTION';
 
     console.log(1);
     await page.evaluate(() => {
@@ -19,7 +19,7 @@ export default async function enterToMainPage(page) {
     });
     console.log(2);
 
-    messageForHumans = 'ENTER ORIGIN';
+    messageForHumans = 'ENTERS ORIGIN';
 
     await page.click('[type="text"]');
     await page.type('[type="text"]', 'bbuenos a', { delay: 3000 });
@@ -29,15 +29,15 @@ export default async function enterToMainPage(page) {
     await page.keyboard.press('Enter', { delay: 2174 });
     console.log(5);
 
-    messageForHumans = 'ENTER DESTINATION';
+    messageForHumans = 'ENTERS DESTINATION';
 
-    const destino = await page.$$('.input-tag');
-    await destino[1].click();
-    await destino[1].type('nneuqu', { delay: 1300 });
+    const destination = await page.$$('.input-tag');
+    await destination[1].click();
+    await destination[1].type('nneuqu', { delay: 1300 });
     await page.waitForSelector('[class="item"]', { visible: 'true' });
     await page.keyboard.press('Enter', { delay: 1174 });
     
-    messageForHumans = 'ENTER DEPARTURE DATE (ACTUALLY IT IS A DEMO, THE REAL DATES WILL BE FILTERED FROM CHILDREN PAGE)';
+    messageForHumans = 'ENTERS DEPARTURE DATE (ACTUALLY IT IS A DEMO, THE REAL DATES WILL BE ENTERED AT CHILDREN PAGE)';
 
     await page.click('[readonly="true"]', { delay: 1054 });
     console.log(6);
@@ -47,17 +47,14 @@ export default async function enterToMainPage(page) {
     });
     console.log(7);
 
-    messageForHumans = 'SEARCH WITH ENTERED VARIABLES';
+    messageForHumans = 'SEARCHES WITH ENTERED VARIABLES';
 
     await page.evaluate(() => {
       const search = document.getElementsByClassName('btn-text');
       search[1].click();
     });
     await page.waitForSelector('span.amount.price-amount', { timeout: 100000 });
-    /*
-    await pagina.waitForTimeout(3000).then(() =>
-    pagina.screenshot({ path: 'foto1.jpg', fullPage: 'true' }));
-    */
+
     console.log('8: succesful enter to children page');
   } catch (err) {
     console.log("Ah-Ah-Ah: you didn't say the magic word");

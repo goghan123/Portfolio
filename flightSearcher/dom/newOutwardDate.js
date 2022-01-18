@@ -1,15 +1,12 @@
 /* eslint-disable linebreak-style */
 
 export default async function enterNewOutwardDate(page, date, desiredMonthID) {
-    const pageBackup = page;
-    const dateBackup = date;
-    const backupDeIdDeMes = desiredMonthID;
   
     console.log('2.1');
     await page.$$eval(
       'em.btn-text',
       (buttons) => buttons.map((button) => {
-        if (button.textContent === 'Modificar') { // Modificar = Modify
+        if (button.textContent === 'Modificar') { // NOTE: Modificar = Modify
           button.click();
         }
       }),

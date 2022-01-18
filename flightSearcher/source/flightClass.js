@@ -28,6 +28,6 @@ export default class Flight {
   reportToExcel() {
     const rows = [this.id, 'Buenos Aires', 'Neuquen', this.date, this.departureTime,
       this.arrivalTime, this.flightDuration, this.airline, this.price];
-      finalTableContent.push(filas);
+      finalTableContent.push(rows);
   }
 }

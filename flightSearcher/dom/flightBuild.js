@@ -63,7 +63,7 @@ async function getAirlines(e, currentFlight) {
   return sameFlightAndCompanyDurationCompany;
 }
 
-export default async function buildFlight(page, date) {
+export default async function buildFlight(page, date, month) {
   const flightsOfThisSearch = await page.$$('div.cluster-container.COMMON');
   await console.log('-------------');
   await console.log('-------------');
@@ -71,7 +71,7 @@ export default async function buildFlight(page, date) {
 
   if (flightsOfThisSearch.length < 1) {
     console.log('Retrying search');
-    await enterNewOutwardDate(page, date);
+    await enterNewOutwardDate(page, date, month);
   } else {
     for (let i = 0; i < flightsOfThisSearch.length; i += 1) {
       const currentFlight = await flightsOfThisSearch[i];
