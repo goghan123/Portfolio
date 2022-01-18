@@ -15,7 +15,6 @@ export let results = [Math.ceil(Math.random() * 4)];
 let turnNumber = 1;
 
 export function gameInProcess() {
-  cancelButton.textContent = 'Cancel';
   cancelButton.disabled = false;
   launchButton.disabled = true;
   let lapIteratorForComputerTurn;
@@ -69,14 +68,13 @@ export function gameInProcess() {
       if (resultsChecker2(loggedValue, turn, countdown) === 'Right answer.') {
         ingameServerMessages(turn);
         interimCountdown -= 1;
-        passToComputerTurn(turn);
+        passToComputerTurn();
       } else {
         serverMessages.innerHTML = 'Wrong answer! Game over. Goodbye.';
         greenSquare.onclick = null;
         redSquare.onclick = null;
         blueSquare.onclick = null;
         yellowSquare.onclick = null;
-        cancelButton.textContent = 'Clear';
       }
     }
 
@@ -109,11 +107,11 @@ export function gameInProcess() {
 }
 
 export function cancelGame() {
+  serverMessages.innerHTML = 'Cancelled';
   greenSquare.onclick = null;
   redSquare.onclick = null;
   blueSquare.onclick = null;
   yellowSquare.onclick = null;
-  results = [];
+  results = [Math.ceil(Math.random() * 4)];
   turnNumber = 1;
-  turnToReviewPreviousValues = 0;
 }
