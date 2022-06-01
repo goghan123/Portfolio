@@ -1,6 +1,6 @@
 # Portfolio
 
-1. Rafaela: online shop. As it is a demo, it is not actually capable of concluding any purchase. It is an imaginary chocolate shop located in the city of Pilar of the Buenos Aires Province, Argentina. The price format is with comma (int),(decimal) instead of using dot (int).(decimal) since that is the locale format. It was developed with React and firstly located in an Express.js server, which infrastructure still remains visible. 
+1. Rafaela: online shop. As it is a demo, it is not actually capable of concluding any purchase. It is an imaginary chocolate shop located in the city of Pilar of the Buenos Aires Province, Argentina. The price format is with comma (int),(decimal) instead of using dot (int).(decimal) since that is the argentinian format. It was developed with React and firstly located in an Express.js server, which infrastructure still remains visible. Also, the whole web is responsive. Some functions may seem redundant but they are meant to reduce the possibility of bugs and information loose while navigating from any subpage to another.
 //Rafaela code: https://github.com/goghan123/Rafaela
 //Rafaela web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
 
