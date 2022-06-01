@@ -1,8 +1,8 @@
 # Portfolio
 
-1. Rafaela: online shop. As it is a demo, it is not actually capable of concluding any purchase. It is an imaginary chocolate shop located in the city of Pilar of the Buenos Aires Province, Argentina. The price format is with comma $[int],[decimal] instead of using dot $[int].[decimal] since that is the locale format. It was developed with React and firstly located in an Express.js server, which infrastructure still remains visible. 
-Rafaela Code: https://github.com/goghan123/Rafaela
-Rafaela Web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
+1. Rafaela: online shop. As it is a demo, it is not actually capable of concluding any purchase. It is an imaginary chocolate shop located in the city of Pilar of the Buenos Aires Province, Argentina. The price format is with comma (int),(decimal) instead of using dot $(int).(decimal) since that is the locale format. It was developed with React and firstly located in an Express.js server, which infrastructure still remains visible. 
+//Rafaela Code: https://github.com/goghan123/Rafaela
+//Rafaela Web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
 
 2. simon-says: the classic game. Tests are available in the __tests__ file.
 
