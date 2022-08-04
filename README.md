@@ -1,6 +1,6 @@
 # Portfolio
 
-1. Rafaela: Webpage (frontend & backend) developed for an entrepeneurship. Since this link is a demo, it is not actually capable of concluding any purchase. The price format is with comma (int),(decimal) instead of using dot (int).(decimal) since that is the argentinian format. It was developed with React and firstly located in an Express.js server and after that. Also, the whole web is responsive. Some functions may seem redundant but they are meant to reduce the possibility of bugs and information loose while navigating from any subpage to another. 
+1. Rafaela: Webpage (frontend & backend) developed for an entrepeneurship. Since this link is a demo, it is not actually capable of concluding any purchase. The price format is with comma (int),(decimal) instead of using dot (int).(decimal) since that is the argentinian format. It was developed with React and firstly located in an Express.js server. Then it was hosted on GitHub Pages. Also, the whole web is responsive. Some functions may seem redundant but they are meant to minimize the possibility of bugs and information loss while navigating from any subpage to another. 
 //Rafaela code: https://github.com/goghan123/Rafaela 
 //Rafaela web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
 Main languages used: React, Node.js, Express.js, JavaScript, HTML, Reactstrap.
