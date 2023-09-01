@@ -1,0 +1,15 @@
+{
+  "name": "sudoku-solver",
+  "type":"module",    
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "io",
+  "license": "ISC",
+  "dependencies": {
+    "modules": "^0.4.0"
+  }
+}
