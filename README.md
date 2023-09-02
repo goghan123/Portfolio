@@ -1,8 +1,8 @@
 # Portfolio
 
-1. Rafaela: Webpage (frontend & backend) developed for an entrepeneurship. Since this link is a demo, it is not actually capable of concluding any purchase. The price format is with comma (int),(decimal) instead of using dot (int).(decimal) since that is the argentinian format. It was developed with React and firstly located in an Express.js server. Then it was hosted on GitHub Pages. Also, the whole web is responsive. Some functions may seem redundant but they are meant to minimize the possibility of bugs and information loss while navigating from any subpage to another. 
-//Rafaela code: https://github.com/goghan123/Rafaela 
-//Rafaela web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
+1. Rafaela: Webpage (frontend & backend) developed for an entrepeneurship. Since this link is a demo, it is not capable of concluding purchases. It was developed with React hosted on GitHub Pages. Also, the whole web is responsive. Some functions may seem redundant but they are meant to minimize the possibility of bugs and information loss while navigating from any subpage to another. 
+// Rafaela code: https://github.com/goghan123/Rafaela 
+// Rafaela web (GitHub Pages): https://goghan123.github.io/Rafaela/#/
 Main languages used: React, Node.js, Express.js, JavaScript, HTML, Reactstrap.
 Other utilities: Github Pages.
 
@@ -16,4 +16,8 @@ Main resources: jQuery, JavaScript, REST API, Jest, HTML, CSS.
 
 4. simon-says: the classic game. Tests are available in the __tests__ file.
 
-Note: The whole portfolio works with Node.js
+5. sudoku-solver: program capable of solving sudokus. As a demo it comes with a sudoku of the highest difficulty. Languages and utilities used: hard JavaScript logic.
+// sudoku-solver code: in this portfolio.
+// sudoku-solver web access: https://goghan123.github.io/sudoku-solver/
+
+Note: Except for the sudoku solver the whole portfolio works with Node.js
